@@ -1,0 +1,80 @@
+﻿@model List<Service.ViewModels.PayRollViewModels.PayRollListViewModel>
+@{
+}
+<div class="content-header clearfix">
+    <h1 class="float-left">
+        Pay-Roll Of Employees
+    </h1>
+    <div class="float-right">
+        <a class="btn btn-primary" href="/PayRoll/Add">
+            <i class="fas fa-plus-square"></i>
+            Add new
+        </a>
+    </div>
+</div>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <table class="table table-striped" id="employee-table">
+                            <thead>
+                                <tr class="bg-primary text-white mx-2 text-center">
+                                    <th>Action</th>
+                                    <th>Employee Name</th>
+                                    <th>Pay Date</th>
+                                    <th>Gross Pay</th>
+                                    <th>Taxes</th>
+                                    <th>Net Pay</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var payroll in Model)
+                                {
+                                    <tr>
+                                        <td class="text-right py-0 align-middle">
+                                            <div class="btn-group btn-group-sm">
+                                                <a href="/PayRoll/Edit/@payroll.PayrollId" class="btn btn-info mr-2"><i class="far fa-edit"></i></a>
+                                                <a href="/PayRoll/SoftDelete/@payroll.PayrollId" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                        <td>@payroll.EmployeeFullName</td>
+                                        <td>@payroll.PayDate</td>
+                                        <td>@payroll.GrossPay</td>
+                                        <td>@payroll.Taxes</td>
+                                        <td>@payroll.NetPay</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts
+    {
+    <script>
+        $(function () {
+            $('#employee-table').DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+                "responsive": true,
+            });
+        });
+    </script>
+}

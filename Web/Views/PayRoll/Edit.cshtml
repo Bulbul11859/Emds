@@ -1,0 +1,84 @@
+﻿@model Service.ViewModels.PayRollViewModels.UpdatePayRollViewModel
+@{
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Update Pay-roll Of Employee</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/PayRoll">Home</a></li>
+                    <li class="breadcrumb-item active">Edit</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h3 class="card-title">Update</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-action="Update">
+                        <div class="row">
+                            <input type="hidden" asp-for="PayrollId" readonly>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="inputStatus">Employee</label>
+                                    <select id="inputStatus" class="form-control custom-select" asp-for="EmployeeId">
+                                        <option selected="" disabled="">Select An Employee</option>
+                                        @foreach (var employee in ViewBag.EmployeeList)
+                                        {
+                                            <option value=@employee.Id>@employee.Name</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="inputName">Pay Date</label>
+                                    <input type="date" step="any" id="inputName" class="form-control" asp-for="PayDate">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="inputName">Gross Pay</label>
+                                    <input type="number" step="any" id="inputName" class="form-control" asp-for="GrossPay">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="inputName">Taxes</label>
+                                    <input type="number" step="any" id="inputName" class="form-control" asp-for="Taxes">
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <label for="inputName">Net Pay</label>
+                                    <input type="number" step="any" id="inputName" class="form-control" asp-for="NetPay">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="/PayRoll" class="btn btn-outline-primary">Cancel</a>
+                                <input type="submit" value="Submit Here" class="btn btn-success float-right">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+</section>

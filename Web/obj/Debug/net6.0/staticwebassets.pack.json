@@ -1,0 +1,821 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Web.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\css\\adminlte.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\img\\bg-Home.png",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\bg-Home.png"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\img\\user2-160x160.jpg",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\img\\user2-160x160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables-bs4\\css\\dataTables.bootstrap4.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables-bs4\\css\\dataTables.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables-bs4\\js\\dataTables.bootstrap4.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables-bs4\\js\\dataTables.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables-bs4\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables-bs4\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables-responsive\\css\\responsive.bootstrap4.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables-responsive\\css\\responsive.bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables-responsive\\js\\dataTables.responsive.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables-responsive\\js\\dataTables.responsive.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables-responsive\\js\\dataTables.responsive.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables-responsive\\js\\dataTables.responsive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables-responsive\\js\\responsive.bootstrap4.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables-responsive\\js\\responsive.bootstrap4.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables\\jquery.dataTables.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables\\jquery.dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\datatables\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\all.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\all.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\brands.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\brands.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\brands.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\regular.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\regular.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\regular.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\solid.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\solid.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\solid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\icheck-bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\icheck-bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\icheck-bootstrap\\icheck-bootstrap.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\icheck-bootstrap\\icheck-bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\icheck-bootstrap\\icheck-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\inputmask\\jquery.inputmask.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\inputmask\\jquery.inputmask.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\inputmask\\jquery.inputmask.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\inputmask\\jquery.inputmask.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\jquery\\jquery.min.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\jquery\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\overlayScrollbars\\css\\OverlayScrollbars.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\overlayScrollbars\\css\\OverlayScrollbars.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\overlayScrollbars\\js\\OverlayScrollbars.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\overlayScrollbars\\js\\OverlayScrollbars.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\overlayScrollbars\\js\\OverlayScrollbars.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\overlayScrollbars\\js\\OverlayScrollbars.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\overlayScrollbars\\js\\jquery.overlayScrollbars.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\overlayScrollbars\\js\\jquery.overlayScrollbars.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\overlayScrollbars\\js\\jquery.overlayScrollbars.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\overlayScrollbars\\js\\jquery.overlayScrollbars.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\css\\select2.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\css\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\af.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\af.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ar.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ar.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\az.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\az.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\bg.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\bg.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\bn.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\bn.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\bs.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\bs.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\build.txt",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\build.txt"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ca.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ca.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\cs.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\cs.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\da.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\da.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\de.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\de.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\dsb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\dsb.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\el.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\el.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\en.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\en.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\es.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\es.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\et.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\et.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\eu.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\eu.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\fa.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\fa.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\fi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\fi.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\fr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\fr.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\gl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\gl.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\he.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\he.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\hi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\hi.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\hr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\hr.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\hsb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\hsb.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\hu.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\hu.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\hy.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\hy.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\id.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\id.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\is.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\is.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\it.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\it.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ja.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ja.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ka.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ka.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\km.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\km.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ko.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ko.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\lt.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\lt.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\lv.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\lv.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\mk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\mk.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ms.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ms.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\nb.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\nb.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ne.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ne.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\nl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\nl.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\pl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\pl.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ps.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ps.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\pt-BR.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\pt-BR.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\pt.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\pt.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ro.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ro.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\ru.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\ru.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\sk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\sk.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\sl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\sl.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\sq.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\sq.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\sr-Cyrl.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\sr-Cyrl.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\sr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\sr.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\sv.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\sv.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\th.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\th.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\tk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\tk.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\tr.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\tr.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\uk.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\uk.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\vi.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\vi.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\zh-CN.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\zh-CN.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\i18n\\zh-TW.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\i18n\\zh-TW.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\select2.full.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\select2.full.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\select2.full.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\select2.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\adminlte\\plugins\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\img\\1306651.jpg",
+      "PackagePath": "staticwebassets\\img\\1306651.jpg"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Web.props",
+      "PackagePath": "build\\Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Web.props",
+      "PackagePath": "buildMultiTargeting\\Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Web.props",
+      "PackagePath": "buildTransitive\\Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,83 @@
+﻿@model List<Service.ViewModels.DepartmentViewModels.DepartmentListViewModel>
+@{
+}
+@if (TempData["MESSAGE"] != null)
+{
+    <div class="alert alert-warning">@TempData["MESSAGE"]</div>
+}
+<div class="content-header clearfix">
+    <h1 class="float-left">
+        Department
+    </h1>
+    <div class="float-right">
+        <a class="btn btn-primary" href="/Department/Add">
+            <i class="fas fa-plus-square"></i>
+            Add new
+        </a>
+    </div>
+</div>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">List</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body pt-3">
+                        <table class="table table-striped table-full-width" id="employee-table">
+                            <thead>
+                                <tr class="bg-primary text-white mx-2 text-center ">
+                                    <th class="align-middle">Action</th>
+                                    <th class="align-middle">Name</th>
+                                    <th class="align-middle">Manager</th>
+                                    <th class="align-middle">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var dept in Model)
+                                {
+                                    <tr>
+                                        <td class="text-right py-0 align-middle">
+                                            <div class="btn-group btn-group-sm">
+                                                <a href="/Department/Edit/@dept.DepartmentId" class="btn btn-info mr-2"><i class="far fa-edit"></i></a>
+                                                <a href="/Department/SoftDelete/@dept.DepartmentId" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-center">@dept.DepartmentName</td>
+                                        <td class="align-middle text-center">@dept.ManagerFullName</td>
+                                        <td class="align-middle">@dept.Description</td>
+
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts
+    {
+    <script>
+        $(function () {
+            $('#employee-table').DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true,
+                "responsive": true,
+            });
+        });
+    </script>
+}
+
+
+
