@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TFBJvy0eRbEYpqnQeprvfhkaJZfA458BgZ1d47EGrXM=",
+  "Hash": "CLYv4ZwHZLr5zqdmaPyoL6e4Z/aTZS68Cz5J6g3Iens=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -1205,6 +1205,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\adminlte\\dist\\js\\adminlte.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\image\\home\\HomeBanner.svg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "adminlte/image/home/HomeBanner.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\adminlte\\image\\home\\HomeBanner.svg"
     },
     {
       "Identity": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
@@ -3466,6 +3483,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\1306651.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\img\\HomeBanner.svg",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "img/HomeBanner.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\HomeBanner.svg"
     },
     {
       "Identity": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\js\\site.js",

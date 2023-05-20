@@ -23,7 +23,6 @@ public class EmployeeController : Controller
         ViewBag.DepartmentList = _employeeService.GetAllDepartment();
         return View();
     }
-
     [HttpPost]
     public IActionResult Add(AddEmployeeViewModel addEmployeeViewModel)
     {
@@ -37,14 +36,12 @@ public class EmployeeController : Controller
             return RedirectToAction("Add");
         }
     }
-
     [HttpGet]
     public IActionResult View(int id)
     {
         var employeeViewModel = _employeeService.GetById(id);
         ViewBag.DepartmentList = _employeeService.GetAllDepartment();
         return View(employeeViewModel);
-
     }
     [HttpPost]
     public IActionResult Update(UpdateEmployeeViewModel model)
@@ -61,7 +58,6 @@ public class EmployeeController : Controller
     }
     public IActionResult Delete(int id)
     {
-
         bool isDeleted = _employeeService.Delete(id);
         if (isDeleted)
         {

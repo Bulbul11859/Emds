@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Repository.Context;
+using Repository.UnitOfWorks;
 using Service.Interfaces;
 using Service.ViewModels.BenefitViewModels;
 using Service.ViewModels.Common;
@@ -15,11 +16,11 @@ namespace Service.Implementations;
 
 public class BenefitService : IBenefitService
 {
-    public readonly EmployeeManagementDbContext _db;
+    public readonly IUnitOfWork _unitOfWork;
     public ILogger<BenefitService> _logger;
-    public BenefitService(EmployeeManagementDbContext db, ILogger<BenefitService> logger)
+    public BenefitService(IUnitOfWork unitOfWork, ILogger<BenefitService> logger)
     {
-        _db = db;
+        _unitOfWork = unitOfWork;
         _logger = logger;
     }
     public bool Create(AddBenefitViewModel model)
@@ -37,8 +38,8 @@ public class BenefitService : IBenefitService
                 benefit.RetirementPlan = model.RetirementPlan;
                 benefit.VacationDays = model.VacationDays;
                 benefit.CreationDate = DateTime.Now;
-                _db.Benefits.Add(benefit);
-                _db.SaveChanges();
+                _unitOfWork.Benefit.Create(benefit);
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }
@@ -53,11 +54,11 @@ public class BenefitService : IBenefitService
     {
         try
         {
-            var benefit = _db.Benefits.Find(id);
+            var benefit = _unitOfWork.Benefit.GetById(id);
             if (benefit != null)
             {
-                _db.Benefits.Remove(benefit);
-                _db.SaveChanges();
+                _unitOfWork.Benefit.Delete(benefit);
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }
@@ -67,12 +68,11 @@ public class BenefitService : IBenefitService
             return false;
         }
     }
-
     public List<BenefitListViewModel> GetAll()
     {
         try
         {
-            var benefit = _db.Benefits
+            var benefit = _unitOfWork.Benefit
                 .Include(i => i.Employee)
                 .Where(i => !i.IsDeleted && !i.Employee.IsDeleted)
                 .AsEnumerable()
@@ -101,7 +101,7 @@ public class BenefitService : IBenefitService
     {
         try
         {
-            var employelist = _db.Employees.Where(i => i.IsDeleted != true).Select(x => new Dropdown
+            var employelist = _unitOfWork.Employee.Where(i => i.IsDeleted != true).Select(x => new Dropdown
             {
                 Id = x.EmployeeId,
                 Name =$"{x.FirstName} {x.LastName}"
@@ -120,7 +120,7 @@ public class BenefitService : IBenefitService
     {
         try
         {
-            var benefit = _db.Benefits.FirstOrDefault(x => x.BenefitsId == id);
+            var benefit = _unitOfWork.Benefit.FirstOrDefault(x => x.BenefitsId == id);
             var viewModel = new UpdateBenefitViewModel();
 
             if (benefit != null)
@@ -145,13 +145,13 @@ public class BenefitService : IBenefitService
     {
         try
         {
-            var benefit = _db.Benefits.Find(id);
+            var benefit = _unitOfWork.Benefit.GetById(id);
 
             if (benefit != null)
             {
                 benefit.IsDeleted = true;
 
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;
@@ -168,7 +168,7 @@ public class BenefitService : IBenefitService
     {
         try
         {
-            var benefit = _db.Benefits.Find(model.BenefitsId);
+            var benefit = _unitOfWork.Benefit.GetById(model.BenefitsId);
 
             if (benefit != null)
             {
@@ -178,7 +178,7 @@ public class BenefitService : IBenefitService
                 benefit.RetirementPlan = model.RetirementPlan;
                 benefit.VacationDays = model.VacationDays;
                 benefit.UpdatedDate = DateTime.Now;
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;

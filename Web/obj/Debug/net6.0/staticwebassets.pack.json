@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\adminlte\\dist\\js\\adminlte.min.js.map"
     },
     {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\image\\home\\HomeBanner.svg",
+      "PackagePath": "staticwebassets\\adminlte\\image\\home\\HomeBanner.svg"
+    },
+    {
       "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\adminlte\\plugins\\bootstrap\\js\\bootstrap.bundle.js"
     },
@@ -567,6 +571,10 @@
     {
       "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\img\\1306651.jpg",
       "PackagePath": "staticwebassets\\img\\1306651.jpg"
+    },
+    {
+      "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\img\\HomeBanner.svg",
+      "PackagePath": "staticwebassets\\img\\HomeBanner.svg"
     },
     {
       "Id": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\js\\site.js",

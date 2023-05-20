@@ -11,27 +11,28 @@ using System.Text;
 using System.Threading.Tasks;
 using Service.ViewModels.BenefitViewModels;
 using Microsoft.EntityFrameworkCore;
+using Repository.UnitOfWorks;
 
 namespace Service.Implementations;
 
 public class PayRollService : IPayRollService
 {
-    public readonly EmployeeManagementDbContext _db;
+    public readonly IUnitOfWork _unitOfWork;
     public ILogger<PayRollService> _logger;
-    public PayRollService(EmployeeManagementDbContext db, ILogger<PayRollService> logger)
+    public PayRollService(IUnitOfWork unitOfWork, ILogger<PayRollService> logger)
     {
-        _db = db;
+        _unitOfWork = unitOfWork;
         _logger = logger;
     }
     public bool Create(AddPayRollViewModel model)
     {
         try
         {
-            var record = _db.Payrolls.FirstOrDefault(x => x.EmployeeId == model.EmployeeId); 
+            var record = _unitOfWork.PayRoll.FirstOrDefault(x => x.EmployeeId == model.EmployeeId); 
             if(record !=null)
             {
                 record.IsDeleted = false; 
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
             }
 
             else if (model != null && record == null)
@@ -44,8 +45,8 @@ public class PayRollService : IPayRollService
                 payroll.Taxes = model.Taxes;
                 payroll.NetPay = model.NetPay;
                 payroll.CreationDate = DateTime.Now;
-                _db.Payrolls.Add(payroll);
-                _db.SaveChanges();
+                _unitOfWork.PayRoll.Create(payroll);
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }
@@ -60,11 +61,11 @@ public class PayRollService : IPayRollService
     {
         try
         {
-            var payRoll = _db.Payrolls.Find(id);
+            var payRoll = _unitOfWork.PayRoll.GetById(id);
             if (payRoll != null)
             {
-                _db.Payrolls.Remove(payRoll);
-                _db.SaveChanges();
+                _unitOfWork.PayRoll.Delete(payRoll);
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }
@@ -79,8 +80,8 @@ public class PayRollService : IPayRollService
     {
         try
         {
-            var employee = _db.Employees.ToList();
-            var payroll = _db.Payrolls
+            var employee = _unitOfWork.Employee.GetAllEnumerable();
+            var payroll = _unitOfWork.PayRoll
                 .Include(i=>i.Employee)
                 .Where(i => !i.IsDeleted && !i.Employee.IsDeleted)
                 .AsEnumerable()
@@ -110,7 +111,7 @@ public class PayRollService : IPayRollService
     {
         try
         {
-            var employelist = _db.Employees.Where(i => i.IsDeleted != true).Select(x => new Dropdown
+            var employelist = _unitOfWork.Employee.Where(i => i.IsDeleted != true).Select(x => new Dropdown
             {
                 Id = x.EmployeeId,
                 Name = x.FirstName + " " + x.LastName
@@ -128,7 +129,7 @@ public class PayRollService : IPayRollService
     {
         try
         {
-            var payroll = _db.Payrolls.FirstOrDefault(x => x.PayrollId == id);
+            var payroll = _unitOfWork.PayRoll.FirstOrDefault(x => x.PayrollId == id);
             var viewModel = new UpdatePayRollViewModel();
 
             if (payroll != null)
@@ -154,14 +155,14 @@ public class PayRollService : IPayRollService
     {
         try
         {
-            var payroll = _db.Payrolls.Find(id);
+            var payroll = _unitOfWork.PayRoll.GetById(id);
 
             if (payroll != null)
             {
 
                 payroll.IsDeleted = true;
                
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;
@@ -177,7 +178,7 @@ public class PayRollService : IPayRollService
     {
         try
         {
-            var payroll = _db.Payrolls.Find(model.PayrollId);
+            var payroll = _unitOfWork.PayRoll.GetById(model.PayrollId);
 
             if (payroll != null)
             {
@@ -189,7 +190,7 @@ public class PayRollService : IPayRollService
                 payroll.Taxes = model.Taxes;
                 payroll.NetPay = model.NetPay;
                 payroll.UpdatedDate = DateTime.Now;
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;

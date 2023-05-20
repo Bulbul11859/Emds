@@ -17,7 +17,6 @@ public class BenefitController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-
        var benefit= _benefitService.GetAll();
         return View(benefit);
     }

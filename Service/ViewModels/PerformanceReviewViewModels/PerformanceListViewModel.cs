@@ -2,7 +2,6 @@
 public class PerformanceListViewModel
 {
     public int PerformanceReviewId { get; set; }
-    public int? EmployeeId { get; set; }
     public string EmployeeFirstName { get; set; }
     public string EmployeeLastName { get; set; }
     public string EmployeeFullName

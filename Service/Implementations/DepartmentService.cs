@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Repository.Context;
+using Repository.UnitOfWorks;
 using Service.Interfaces;
 using Service.ViewModels.BenefitViewModels;
 using Service.ViewModels.Common;
@@ -17,18 +18,18 @@ namespace Service.Implementations;
 
 public class DepartmentService : IDepartmentService
 {
-    public readonly EmployeeManagementDbContext _db;
+    public readonly IUnitOfWork _unitOfWork;
     public ILogger<DepartmentService> _logger;
-    public DepartmentService(EmployeeManagementDbContext db, ILogger<DepartmentService> logger)
+    public DepartmentService(IUnitOfWork unitOfWork, ILogger<DepartmentService> logger)
     {
-        _db = db;
+        _unitOfWork = unitOfWork;
         _logger = logger;
     }
     public bool Create(AddDepartmentViewModel model)
     {
         try
         {
-            var isDepartmentNameMatched = _db.Departments.Any(d => d.DepartmentName == model.DepartmentName);
+            var isDepartmentNameMatched = _unitOfWork.Department.Any(d => d.DepartmentName == model.DepartmentName);
             if (!isDepartmentNameMatched)
             {
                 if (model != null)
@@ -39,8 +40,8 @@ public class DepartmentService : IDepartmentService
                     department.ManagerId = model.ManagerId;
                     department.Description = model.Description;
                     department.CreationDate = DateTime.Now;
-                    _db.Departments.Add(department);
-                    _db.SaveChanges();
+                    _unitOfWork.Department.Create(department);
+                    _unitOfWork.SaveChangesAsync();
                 }
                 return true;
             }
@@ -58,14 +59,23 @@ public class DepartmentService : IDepartmentService
     {
         try
         {
-
-            var department = _db.Departments.Find(id);
-            if (department != null)
+            var isDependentToEmployee = _unitOfWork.Employee
+               .Where(e => e.IsDeleted != true)
+               .Any(x => x.DepartmentId == id);
+            if (!isDependentToEmployee)
             {
-                _db.Departments.Remove(department);
-                _db.SaveChanges();
+                var department = _unitOfWork.Department.GetById(id);
+
+                if (department != null)
+                {
+                    _unitOfWork.Department.Delete(department);
+                    _unitOfWork.SaveChangesAsync();
+
+                }
+                return true;
             }
-            return true;
+            else
+                return false;
         }
         catch (Exception e)
         {
@@ -79,9 +89,9 @@ public class DepartmentService : IDepartmentService
     {
         try
         {
-            var employee = _db.Employees.ToList();
-            var departments = _db.Departments.ToList();
-            var department = _db.Departments
+            var employee = _unitOfWork.Employee.ToList();
+            var departments = _unitOfWork.Department.ToList();
+            var department = _unitOfWork.Department
                 .Where(i => i.IsDeleted != true)
                 .AsEnumerable()
                 .Select(x => new DepartmentListViewModel
@@ -106,7 +116,7 @@ public class DepartmentService : IDepartmentService
     {
         try
         {
-            var employelist = _db.Employees.Where(i => i.IsDeleted != true).Select(x => new Dropdown
+            var employelist = _unitOfWork.Employee.Where(i => i.IsDeleted != true).Select(x => new Dropdown
             {
                 Id = x.EmployeeId,
                 Name = x.FirstName + " " + x.LastName
@@ -125,7 +135,7 @@ public class DepartmentService : IDepartmentService
     {
         try
         {
-            var department = _db.Departments.FirstOrDefault(x => x.DepartmentId == id);
+            var department = _unitOfWork.Department.FirstOrDefault(x => x.DepartmentId == id);
             var viewModel = new UpdateDepartmentViewModel();
             if (department != null)
             {
@@ -148,17 +158,17 @@ public class DepartmentService : IDepartmentService
     {
         try
         {
-            var isDependentToEmployee = _db.Employees
+            var isDependentToEmployee = _unitOfWork.Employee
                 .Where(e => e.IsDeleted != true)
                 .Any(x => x.DepartmentId == id);
             if (!isDependentToEmployee)
             {
-                var department = _db.Departments.Find(id);
+                var department = _unitOfWork.Department.GetById(id);
 
                 if (department != null)
                 {
                     department.IsDeleted = true;
-                    _db.SaveChanges();
+                    _unitOfWork.SaveChangesAsync();
 
                 }
                 return true;
@@ -178,7 +188,7 @@ public class DepartmentService : IDepartmentService
     {
         try
         {
-            var department = _db.Departments.Find(model.DepartmentId);
+            var department = _unitOfWork.Department.GetById(model.DepartmentId);
 
             if (department != null)
             {
@@ -186,7 +196,7 @@ public class DepartmentService : IDepartmentService
                 department.ManagerId = model.ManagerId;
                 department.Description = model.Description;
                 department.UpdatedDate = DateTime.Now;
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;

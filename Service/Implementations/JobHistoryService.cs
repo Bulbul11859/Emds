@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Repository.Context;
+using Repository.UnitOfWorks;
 using Service.Interfaces;
 using Service.ViewModels.BenefitViewModels;
 using Service.ViewModels.Common;
@@ -18,11 +19,11 @@ namespace Service.Implementations;
 
 public class JobHistoryService : IJobHistoryService
 {
-    public readonly EmployeeManagementDbContext _db;
+    public readonly IUnitOfWork _unitOfWork;
     public ILogger<JobHistoryService> _logger;
-    public JobHistoryService(EmployeeManagementDbContext db, ILogger<JobHistoryService> logger)
+    public JobHistoryService(IUnitOfWork unitOfWork, ILogger<JobHistoryService> logger)
     {
-        _db = db;
+        _unitOfWork = unitOfWork;
         _logger = logger;
     }
     public bool Create(AddJobHistoryViewModel model)
@@ -41,8 +42,8 @@ public class JobHistoryService : IJobHistoryService
                 jobHistory.CompanyName=model.CompanyName;   
                 jobHistory.Responsibilities=model.Responsibilities;
                 jobHistory.CreationDate = DateTime.Now;
-                _db.JobHistorys.Add(jobHistory);    
-                _db.SaveChanges();
+                _unitOfWork.JobHistory.Create(jobHistory);    
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }
@@ -57,11 +58,11 @@ public class JobHistoryService : IJobHistoryService
     {
         try
         {
-            var jobHistory = _db.JobHistorys.Find(id);
+            var jobHistory = _unitOfWork.JobHistory.GetById(id);
             if (jobHistory != null)
             {
-                _db.JobHistorys.Remove(jobHistory);
-                _db.SaveChanges();
+                _unitOfWork.JobHistory.Delete(jobHistory);
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }
@@ -77,8 +78,8 @@ public class JobHistoryService : IJobHistoryService
     {
         try
         {
-            var employee = _db.Employees.ToList();
-            var jobHistory = _db.JobHistorys
+            var employee = _unitOfWork.Employee.GetAllEnumerable();
+            var jobHistory = _unitOfWork.JobHistory
                 .Include(i=>i.Employee)
                 .Where(i => !i.IsDeleted && !i.Employee.IsDeleted)
                 .AsEnumerable()
@@ -109,7 +110,7 @@ public class JobHistoryService : IJobHistoryService
     {
         try
         {
-            var employelist = _db.Employees.Where(i => i.IsDeleted != true).Select(x => new Dropdown
+            var employelist = _unitOfWork.Employee.Where(i => i.IsDeleted != true).Select(x => new Dropdown
             {
                 Id = x.EmployeeId,
                 Name = x.FirstName + " " + x.LastName
@@ -128,7 +129,7 @@ public class JobHistoryService : IJobHistoryService
     {
         try
         {
-            var jobHistory=_db.JobHistorys.FirstOrDefault(x=>x.JobHistoryId==id);
+            var jobHistory=_unitOfWork.JobHistory.FirstOrDefault(x=>x.JobHistoryId==id);
             var viewModel = new UpdateJobHistoryViewModel();
             if(jobHistory != null)
             {
@@ -155,12 +156,12 @@ public class JobHistoryService : IJobHistoryService
     {
         try
         {
-            var jobHistory = _db.JobHistorys.Find(id);
+            var jobHistory = _unitOfWork.JobHistory.GetById(id);
             if (jobHistory != null)
             {
                 jobHistory.IsDeleted =true;
                
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;
@@ -177,7 +178,7 @@ public class JobHistoryService : IJobHistoryService
     {
         try
         {
-            var jobHistory = _db.JobHistorys.Find(model.JobHistoryId);
+            var jobHistory = _unitOfWork.JobHistory.GetById(model.JobHistoryId);
             if(jobHistory != null)
             {
                 jobHistory.EmployeeId = model.EmployeeId;
@@ -188,7 +189,7 @@ public class JobHistoryService : IJobHistoryService
                 jobHistory.CompanyName = model.CompanyName;
                 jobHistory.Responsibilities = model.Responsibilities;
                 jobHistory.UpdatedDate = DateTime.Now;
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;

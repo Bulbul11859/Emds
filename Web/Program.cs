@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Repository.Context;
+using Repository.Repositories;
+using Repository.UnitOfWorks;
 using Service.Implementations;
 using Service.Interfaces;
 
@@ -10,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<EmployeeManagementDbContext>(options=>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnectionString")));
 // Add services to the container.
+builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 builder.Services.AddTransient<IEmployeeService, EmployeeService>();
 builder.Services.AddTransient<IBenefitService,BenefitService>();
 builder.Services.AddTransient<IPerformanceReviewService, PerformanceReviewService>();

@@ -33,7 +33,6 @@ namespace API.Controllers
                 return BadRequest("Failed to Add");
             }
         }
-
         [HttpGet]
         public IActionResult Get(int id)
         {
@@ -64,7 +63,6 @@ namespace API.Controllers
             {
                 return BadRequest("Failed to delete this Employee because He/She is a Manager of Employee Table");
             }
-
         }
         [HttpDelete]
         public IActionResult SoftDelete(int id)

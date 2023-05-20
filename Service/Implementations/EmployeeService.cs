@@ -1,6 +1,7 @@
 ﻿using Entity.Models;
 using Microsoft.Extensions.Logging;
 using Repository.Context;
+using Repository.UnitOfWorks;
 using Service.Interfaces;
 using Service.ViewModels.Common;
 using Service.ViewModels.EmployeeViewModels;
@@ -8,12 +9,12 @@ using Service.ViewModels.EmployeeViewModels;
 namespace Service.Implementations;
 public class EmployeeService : IEmployeeService
 {
-    public readonly EmployeeManagementDbContext _db;
+    public readonly IUnitOfWork _unitOfWork;
     public ILogger<EmployeeService> _logger;
 
-    public EmployeeService(EmployeeManagementDbContext db, ILogger<EmployeeService> logger)
+    public EmployeeService(IUnitOfWork unitOfWork, ILogger<EmployeeService> logger)
     {
-        _db = db;
+        _unitOfWork = unitOfWork;
         _logger = logger;
     }
     public bool Create(AddEmployeeViewModel model)
@@ -35,8 +36,8 @@ public class EmployeeService : IEmployeeService
             employee.Salary = model.Salary;
             employee.CreationDate = DateTime.Now;
 
-            _db.Employees.Add(employee);
-            _db.SaveChanges();
+            _unitOfWork.Employee.Create(employee);
+            _unitOfWork.SaveChangesAsync();  
             return true;
 
         }
@@ -51,16 +52,16 @@ public class EmployeeService : IEmployeeService
     {
         try
         {
-            var isDependentToDepartment = _db.Departments.
+            var isDependentToDepartment = _unitOfWork.Department.
                  Where(d => d.IsDeleted != true)
                  .Any(x => x.ManagerId == id);
             if (!isDependentToDepartment)
             {
-                var employee = _db.Employees.Find(id);
+                var employee = _unitOfWork.Employee.GetById(id);
                 if (employee != null)
                 {
-                    _db.Employees.Remove(employee);
-                    _db.SaveChanges();
+                    _unitOfWork.Employee.Delete(employee);
+                    _unitOfWork.SaveChangesAsync();
                 }
                 return true;
             }
@@ -78,8 +79,8 @@ public class EmployeeService : IEmployeeService
     {
         try
         {
-            var departman = _db.Departments.ToList();
-            var employee = _db.Employees
+            var departman = _unitOfWork.Department.GetAllEnumerable();
+            var employee = _unitOfWork.Employee
                 .Where(i => i.IsDeleted != true)
                 .AsEnumerable()
                 .Select(x => new EmployeeListViewModel
@@ -110,7 +111,7 @@ public class EmployeeService : IEmployeeService
     {
         try
         {
-            var department = _db.Departments.Where(i => !i.IsDeleted).Select(x => new DepartmentDropdown
+            var department = _unitOfWork.Department.Where(i => !i.IsDeleted).Select(x => new DepartmentDropdown
             {
                 Id = x.DepartmentId,
                 DepartmentName = x.DepartmentName
@@ -128,7 +129,7 @@ public class EmployeeService : IEmployeeService
     {
         try
         {
-            var employee = _db.Employees.FirstOrDefault(x => x.EmployeeId == id);
+            var employee = _unitOfWork.Employee.FirstOrDefault(x => x.EmployeeId == id);
             var viewModel = new UpdateEmployeeViewModel();
 
             if (employee != null)
@@ -158,16 +159,16 @@ public class EmployeeService : IEmployeeService
     {
         try
         {
-            var isDependentToDepartment = _db.Departments.
+            var isDependentToDepartment = _unitOfWork.Department.
                 Where(d => d.IsDeleted != true)
                 .Any(x => x.ManagerId == id);
             if (!isDependentToDepartment)
             {
-                var employee = _db.Employees.Find(id);
+                var employee = _unitOfWork.Employee.GetById(id);
                 if (employee != null)
                 {
                     employee.IsDeleted = true;
-                    _db.SaveChanges();
+                    _unitOfWork.SaveChangesAsync();
                 }
                 return true;
             }
@@ -185,7 +186,7 @@ public class EmployeeService : IEmployeeService
     {
         try
         {
-            var employee = _db.Employees.Find(model.EmployeeId);
+            var employee = _unitOfWork.Employee.GetById(model.EmployeeId);
             if (employee != null)
             {
                 employee.DepartmentId = model.DepartmentId;
@@ -200,7 +201,7 @@ public class EmployeeService : IEmployeeService
                 employee.Salary = model.Salary;
                 employee.UpdatedDate = DateTime.Now;
 
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }

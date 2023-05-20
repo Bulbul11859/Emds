@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Repository.Context;
+using Repository.UnitOfWorks;
 using Service.Interfaces;
 using Service.ViewModels.Common;
 using Service.ViewModels.PerformanceReviewViewModels;
@@ -15,18 +16,24 @@ namespace Service.Implementations;
 
 public class PerformanceReviewService : IPerformanceReviewService
 {
-    public readonly EmployeeManagementDbContext _db;
+    public readonly IUnitOfWork _unitOfWork;
     public ILogger<PerformanceReviewService> _logger;
-    public PerformanceReviewService(EmployeeManagementDbContext db, ILogger<PerformanceReviewService> logger)
+    public PerformanceReviewService(IUnitOfWork unitOfWork, ILogger<PerformanceReviewService> logger)
     {
-        _db = db;
+        _unitOfWork = unitOfWork;
         _logger = logger;
     }
     public bool Create(AddPerformanceReviewViewModels model)
     {
         try
         {
-            if (model != null && model.EmployeeId != model.ReviewerId)
+            var record = _unitOfWork.PerformanceReview.FirstOrDefault(x => x.EmployeeId == model.EmployeeId);
+            if (record != null)
+            {
+                record.IsDeleted = false;
+                _unitOfWork.SaveChangesAsync();
+            }
+            else if (model != null && model.EmployeeId != model.ReviewerId && record == null)
             {
                 var performanceReview = new PerformanceReview();
                 performanceReview.PerformanceReviewId = model.PerformanceReviewId;
@@ -35,12 +42,11 @@ public class PerformanceReviewService : IPerformanceReviewService
                 performanceReview.OverallRating = model.OverallRating;
                 performanceReview.Comments = model.Comments;
                 performanceReview.CreationDate = DateTime.Now;
-                _db.PerformanceReviews.Add(performanceReview);
-                _db.SaveChanges();
-                return true;
+                _unitOfWork.PerformanceReview.Create(performanceReview);
+                _unitOfWork.SaveChangesAsync();
+
             }
-            else
-                return false;
+            return true;
         }
         catch (Exception e)
         {
@@ -54,11 +60,11 @@ public class PerformanceReviewService : IPerformanceReviewService
     {
         try
         {
-            var performanceReview = _db.PerformanceReviews.Find(id);
+            var performanceReview = _unitOfWork.PerformanceReview.GetById(id);
             if (performanceReview != null)
             {
-                _db.PerformanceReviews.Remove(performanceReview);
-                _db.SaveChanges();
+                _unitOfWork.PerformanceReview.Delete(performanceReview);
+                _unitOfWork.SaveChangesAsync();
             }
             return true;
         }
@@ -73,8 +79,8 @@ public class PerformanceReviewService : IPerformanceReviewService
     {
         try
         {
-            var employee = _db.Employees.ToList();
-            var performanceReview = _db.PerformanceReviews
+            var employee = _unitOfWork.Employee.GetAllEnumerable();
+            var performanceReview = _unitOfWork.PerformanceReview
                 .Include(i=>i.Employee)
                 .Where(i =>!i.IsDeleted && !i.Employee.IsDeleted)
                 .AsEnumerable()
@@ -103,7 +109,7 @@ public class PerformanceReviewService : IPerformanceReviewService
     {
         try
         {
-            var employelist = _db.Employees.Where(i => i.IsDeleted != true).Select(x => new Dropdown
+            var employelist = _unitOfWork.Employee.Where(i => i.IsDeleted != true).Select(x => new Dropdown
             {
                 Id = x.EmployeeId,
                 Name = x.FirstName + " " + x.LastName
@@ -122,7 +128,7 @@ public class PerformanceReviewService : IPerformanceReviewService
     {
         try
         {
-            var performanceReview = _db.PerformanceReviews.FirstOrDefault(x => x.PerformanceReviewId == id);
+            var performanceReview = _unitOfWork.PerformanceReview.FirstOrDefault(x => x.PerformanceReviewId == id);
             var viewModel = new UpdatePerformanceReviewViewModels();
             if (performanceReview != null)
             {
@@ -146,13 +152,13 @@ public class PerformanceReviewService : IPerformanceReviewService
     {
         try
         {
-            var performanceReview = _db.PerformanceReviews.Find(id);
+            var performanceReview = _unitOfWork.PerformanceReview.GetById(id);
 
             if (performanceReview != null)
             {
                 performanceReview.IsDeleted = true;
 
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
 
             }
             return true;
@@ -169,7 +175,7 @@ public class PerformanceReviewService : IPerformanceReviewService
     {
         try
         {
-            var performanceReview = _db.PerformanceReviews.Find(model.PerformanceReviewId);
+            var performanceReview = _unitOfWork.PerformanceReview.GetById(model.PerformanceReviewId);
             if (performanceReview != null && model.EmployeeId != model.ReviewerId)
             {
                 performanceReview.EmployeeId = model.EmployeeId;
@@ -177,7 +183,7 @@ public class PerformanceReviewService : IPerformanceReviewService
                 performanceReview.OverallRating = model.OverallRating;
                 performanceReview.Comments = model.Comments;
                 performanceReview.UpdatedDate = DateTime.Now;
-                _db.SaveChanges();
+                _unitOfWork.SaveChangesAsync();
                 return true;
             }
             else
