@@ -18,5 +18,5 @@ public class EmployeeManagementDbContext : DbContext
     public DbSet<Benefit> Benefits { get; set; }
     public DbSet<JobHistory> JobHistorys { get; set; }
     public DbSet<Department> Departments { get; set; }
-    public DbSet<PayRoll> Payrolls { get; set; }    
+    public DbSet<PayRoll> Payrolls { get; set; }
 }

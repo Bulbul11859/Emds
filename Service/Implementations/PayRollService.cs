@@ -80,16 +80,16 @@ public class PayRollService : IPayRollService
     {
         try
         {
-            var employee = _unitOfWork.Employee.GetAllEnumerable();
             var payroll = _unitOfWork.PayRoll
+                .Entity()
                 .Include(i=>i.Employee)
                 .Where(i => !i.IsDeleted && !i.Employee.IsDeleted)
                 .AsEnumerable()
                 .Select(x => new PayRollListViewModel
             {
                 PayrollId = x.PayrollId,
-                EmployeeFirstName = x.EmployeeId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.EmployeeId).FirstName) : "",
-                EmployeeLastName = x.EmployeeId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.EmployeeId).LastName) : "",
+                EmployeeFirstName =x.Employee.FirstName,
+                EmployeeLastName = x.Employee.LastName,
                 PayDate = x.PayDate,
                 GrossPay = x.GrossPay,
                 Taxes = x.Taxes,

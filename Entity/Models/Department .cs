@@ -12,7 +12,6 @@ public class Department : BaseEntity
     [Key]
     public int DepartmentId { get; set; }
     public string DepartmentName { get; set; }
-
     [ForeignKey("Employee")]
     [Column("EmployeeId")]
     public int? ManagerId { get; set; }

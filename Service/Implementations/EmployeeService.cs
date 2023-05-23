@@ -1,4 +1,5 @@
 ﻿using Entity.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Repository.Context;
 using Repository.UnitOfWorks;
@@ -74,19 +75,19 @@ public class EmployeeService : IEmployeeService
             return false;
         }
     }
-
     public List<EmployeeListViewModel> GetAll()
     {
         try
         {
-            var departman = _unitOfWork.Department.GetAllEnumerable();
             var employee = _unitOfWork.Employee
+                .Entity()
+                .Include(x=>x.Department)
                 .Where(i => i.IsDeleted != true)
                 .AsEnumerable()
                 .Select(x => new EmployeeListViewModel
                 {
                     EmployeeId = x.EmployeeId,
-                    DepartmentName = x.DepartmentId != null ? (departman.FirstOrDefault(e => e.DepartmentId == x.DepartmentId).DepartmentName) : "",
+                    DepartmentName = x.Department.DepartmentName,
                     FirstName = x.FirstName,
                     LastName = x.LastName,
                     Email = x.Email,

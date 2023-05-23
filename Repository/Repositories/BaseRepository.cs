@@ -11,8 +11,9 @@ public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
         _db = db;
     }
+    public IQueryable<T> Entity() => _db.Set<T>();
     public void Create(T entity)
-    { 
+    {
         _db.Set<T>().Add(entity);
     }
     public void Update(T entity)

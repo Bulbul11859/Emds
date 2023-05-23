@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CLYv4ZwHZLr5zqdmaPyoL6e4Z/aTZS68Cz5J6g3Iens=",
+  "Hash": "cOlA6BNQPBhbtkt0NvhD0WxSow5X6udx7069dhNqgug=",
   "Source": "Web",
   "BasePath": "_content/Web",
   "Mode": "Default",
@@ -1120,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\adminlte\\dist\\img\\bg-Home.png"
+    },
+    {
+      "Identity": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\img\\bulbul.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "adminlte/dist/img/bulbul.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\adminlte\\dist\\img\\bulbul.png"
+    },
+    {
+      "Identity": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\img\\logo.png",
+      "SourceId": "Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\",
+      "BasePath": "_content/Web",
+      "RelativePath": "adminlte/dist/img/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\adminlte\\dist\\img\\logo.png"
     },
     {
       "Identity": "C:\\Users\\BULBUL\\Desktop\\Jayedul vai Task\\EmployeeManagementSystem\\Web\\wwwroot\\adminlte\\dist\\img\\user2-160x160.jpg",

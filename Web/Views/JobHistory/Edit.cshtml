@@ -1,16 +1,17 @@
 ﻿@model Service.ViewModels.JobHistoryViewModels.UpdateJobHistoryViewModel
 @{
+    ViewData["Title"] = "Job History~Edit";
 }
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Update Job History Of Employee</h1>
+                <h1>Update Job History</h1>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="/JobHistory">Home</a></li>
-                    <li class="breadcrumb-item active">Add</li>
+                    <li class="breadcrumb-item active">Edit</li>
                 </ol>
             </div>
         </div>
@@ -21,7 +22,7 @@
         <div class="col-12">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Add</h3>
+                    <h3 class="card-title">Edit</h3>
 
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -85,7 +86,7 @@
                             </div>
                             <div class="col-12">
                                 <a href="/JobHistory/add" class="btn btn-outline-primary">Cancel</a>
-                                <input type="submit" value="Submit Here" class="btn btn-success float-right">
+                                <input type="submit" value="Update" class="btn btn-success float-right">
                             </div>
                         </div>
 

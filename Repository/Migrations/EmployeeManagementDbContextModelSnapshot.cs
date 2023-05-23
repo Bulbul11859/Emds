@@ -320,6 +320,9 @@ namespace Repository.Migrations
                     b.HasIndex("EmployeeId")
                         .IsUnique();
 
+                    b.HasIndex("ReviewerId")
+                        .IsUnique();
+
                     b.ToTable("PerformanceReviews");
                 });
 
@@ -370,12 +373,20 @@ namespace Repository.Migrations
             modelBuilder.Entity("Entity.Models.PerformanceReview", b =>
                 {
                     b.HasOne("Entity.Models.Employee", "Employee")
-                        .WithOne("PerformanceReview")
+                        .WithOne("PerformanceReviewFor")
                         .HasForeignKey("Entity.Models.PerformanceReview", "EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Entity.Models.Employee", "Reviewer")
+                        .WithOne("PerformanceReviewBy")
+                        .HasForeignKey("Entity.Models.PerformanceReview", "ReviewerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Employee");
+
+                    b.Navigation("Reviewer");
                 });
 
             modelBuilder.Entity("Entity.Models.Department", b =>
@@ -392,7 +403,10 @@ namespace Repository.Migrations
                     b.Navigation("PayRoll")
                         .IsRequired();
 
-                    b.Navigation("PerformanceReview")
+                    b.Navigation("PerformanceReviewBy")
+                        .IsRequired();
+
+                    b.Navigation("PerformanceReviewFor")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

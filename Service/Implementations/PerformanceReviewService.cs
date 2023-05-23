@@ -79,18 +79,20 @@ public class PerformanceReviewService : IPerformanceReviewService
     {
         try
         {
-            var employee = _unitOfWork.Employee.GetAllEnumerable();
-            var performanceReview = _unitOfWork.PerformanceReview
-                .Include(i=>i.Employee)
-                .Where(i =>!i.IsDeleted && !i.Employee.IsDeleted)
-                .AsEnumerable()
+            var performanceReviewData = _unitOfWork.PerformanceReview
+                .Entity()
+                .Include(i => i.Employee)
+                .Include(i => i.Reviewer)
+                .Where(i => !i.IsDeleted && !i.Employee.IsDeleted)
+                .AsEnumerable();
+            var performanceReview = performanceReviewData
                 .Select(x => new PerformanceListViewModel
             {
                 PerformanceReviewId = x.PerformanceReviewId,
-                EmployeeFirstName = x.EmployeeId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.EmployeeId).FirstName) : "",
-                EmployeeLastName = x.EmployeeId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.EmployeeId).LastName) : "",
-                ReviewrFirstName = x.ReviewerId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.ReviewerId).FirstName) : "",
-                ReviewrLastName = x.ReviewerId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.ReviewerId).LastName) : "",
+                EmployeeFirstName = x.Employee.FirstName,
+                EmployeeLastName =x.Employee.LastName,
+                ReviewrFirstName = x.Reviewer.FirstName,
+                ReviewrLastName = x.Reviewer.LastName,
                 OverallRating = x.OverallRating,
                 Comments = x.Comments
 

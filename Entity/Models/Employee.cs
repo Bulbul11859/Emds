@@ -20,7 +20,9 @@ public class Employee : BaseEntity
     public string JobTitle { get; set; }
     public DateTime EmploymentDate { get; set; }
     public decimal Salary { get; set; }
-    public virtual PerformanceReview PerformanceReview { get; set; }
+    public virtual PerformanceReview PerformanceReviewFor { get; set; }
+    [InverseProperty("Reviewer")]
+    public virtual PerformanceReview PerformanceReviewBy { get; set; }
     public virtual Department Department { get; set; }
     public virtual PayRoll PayRoll { get; set; }
     public virtual ICollection<Benefit> Benefit { get; set; }

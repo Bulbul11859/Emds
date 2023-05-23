@@ -80,6 +80,7 @@ public class JobHistoryService : IJobHistoryService
         {
             var employee = _unitOfWork.Employee.GetAllEnumerable();
             var jobHistory = _unitOfWork.JobHistory
+                .Entity()
                 .Include(i=>i.Employee)
                 .Where(i => !i.IsDeleted && !i.Employee.IsDeleted)
                 .AsEnumerable()

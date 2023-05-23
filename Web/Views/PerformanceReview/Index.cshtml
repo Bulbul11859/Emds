@@ -1,9 +1,10 @@
 ﻿@model List<Service.ViewModels.PerformanceReviewViewModels.PerformanceListViewModel>
 @{
+    ViewData["Title"] = "PerformanceReview";
 }
 <div class="content-header clearfix">
     <h1 class="float-left">
-        Permormance Review Of Employees
+        Permormance Review
     </h1>
     <div class="float-right">
         <a class="btn btn-primary" href="/PerformanceReview/Add">
@@ -22,14 +23,14 @@
                         <h3 class="card-title">List</h3>
                     </div>
                     <!-- /.card-header -->
-                    <div class="card-body p-0">
+                    <div class="card-body p-2">
                         <table class="table table-striped" id="employee-table">
                             <thead>
                                 <tr class="bg-primary text-white mx-2 text-center">
                                     <th>Action</th>
                                     <th>Review To</th>
                                     <th>Review By</th>
-                                    <th>Overall Rating</th>
+                                    <th>Rating</th>
                                     <th>Comments</th>
                                 </tr>
                             </thead>

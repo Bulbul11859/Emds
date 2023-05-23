@@ -89,9 +89,9 @@ public class DepartmentService : IDepartmentService
     {
         try
         {
-            var employee = _unitOfWork.Employee.ToList();
-            var departments = _unitOfWork.Department.ToList();
             var department = _unitOfWork.Department
+                //.Entity()
+                //.Include(e => e.Employee)
                 .Where(i => i.IsDeleted != true)
                 .AsEnumerable()
                 .Select(x => new DepartmentListViewModel
@@ -99,8 +99,8 @@ public class DepartmentService : IDepartmentService
                 DepartmentId = x.DepartmentId,
                 DepartmentName = x.DepartmentName,
                 ManagerId = x.ManagerId,
-                ManagerFirstName = x.ManagerId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.ManagerId).FirstName) : "",
-                ManagerLastName = x.ManagerId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.ManagerId).LastName) : "",
+                //ManagerFirstName = x.ManagerId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.ManagerId).FirstName) : "",
+                //ManagerLastName = x.ManagerId != null ? (employee.FirstOrDefault(e => e.EmployeeId == x.ManagerId).LastName) : "",
                 Description = x.Description
             }).ToList();
             return department;

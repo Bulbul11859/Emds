@@ -73,6 +73,7 @@ public class BenefitService : IBenefitService
         try
         {
             var benefit = _unitOfWork.Benefit
+                .Entity()
                 .Include(i => i.Employee)
                 .Where(i => !i.IsDeleted && !i.Employee.IsDeleted)
                 .AsEnumerable()
