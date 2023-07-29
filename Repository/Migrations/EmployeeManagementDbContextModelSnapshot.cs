@@ -342,7 +342,7 @@ namespace Repository.Migrations
                     b.HasOne("Entity.Models.Department", "Department")
                         .WithMany("Employees")
                         .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Department");
@@ -375,13 +375,13 @@ namespace Repository.Migrations
                     b.HasOne("Entity.Models.Employee", "Employee")
                         .WithOne("PerformanceReviewFor")
                         .HasForeignKey("Entity.Models.PerformanceReview", "EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Entity.Models.Employee", "Reviewer")
                         .WithOne("PerformanceReviewBy")
                         .HasForeignKey("Entity.Models.PerformanceReview", "ReviewerId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Employee");

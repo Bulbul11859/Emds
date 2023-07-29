@@ -11,6 +11,7 @@ public class Department : BaseEntity
 {
     [Key]
     public int DepartmentId { get; set; }
+    [Required]
     public string DepartmentName { get; set; }
     [ForeignKey("Employee")]
     [Column("EmployeeId")]
